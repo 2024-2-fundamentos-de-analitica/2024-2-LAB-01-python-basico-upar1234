@@ -35,13 +35,5 @@ def pregunta_12():
     dic = dict(letters)
     
     return dic
-                
-                        
-        
-        
-        
-    
-    
-    
     
 pregunta_12()
