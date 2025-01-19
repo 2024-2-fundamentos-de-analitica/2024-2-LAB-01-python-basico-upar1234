@@ -20,3 +20,18 @@ def pregunta_10():
 
 
     """
+    import csv
+    l=[]
+    csvfile = open("C:/Universidad/Sistemas/Fundamentos de analítica/Labs/2024-2-LAB-01-python-basico-upar1234/files/input/data.csv", "r")
+    for line1 in csvfile:
+        x=line1.split('\t')
+        letter = x[0]
+        third = x[3]
+        fourth = x[4]
+        third = len(third.split(','))
+        fourth =len(fourth.split(','))
+        tup = (letter, third, fourth)
+        l.append(tup)
+    return l
+
+pregunta_10()

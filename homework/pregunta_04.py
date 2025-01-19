@@ -26,3 +26,15 @@ def pregunta_04():
      ('12', 3)]
 
     """
+    from collections import Counter
+    csvfile = open("C:/Universidad/Sistemas/Fundamentos de analítica/Labs/2024-2-LAB-01-python-basico-upar1234/files/input/data.csv", "r")
+    
+    meses = []
+    for row in csvfile:
+        mes = row[9:11]
+        meses.append(mes)
+    meses = Counter(meses)    
+    meses = sorted(meses.items(), key=lambda item: item[0])
+    return meses
+    
+pregunta_04()

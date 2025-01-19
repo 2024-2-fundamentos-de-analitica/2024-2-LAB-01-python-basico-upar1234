@@ -7,6 +7,18 @@ utilizar pandas, numpy o scipy.
 
 
 def pregunta_01():
+    import csv
+    
+    csvfile = open("C:/Universidad/Sistemas/Fundamentos de analítica/Labs/2024-2-LAB-01-python-basico-upar1234/files/input/data.csv", "r")
+    
+    edades = []
+    for row in csvfile:        
+        edad = row[2]
+        edades.append(int(edad))
+    total = sum(edades)
+    return total
+        
+    
     """
     Retorne la suma de la segunda columna.
 
@@ -14,3 +26,4 @@ def pregunta_01():
     214
 
     """
+pregunta_01()
